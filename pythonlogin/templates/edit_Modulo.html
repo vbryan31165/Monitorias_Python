@@ -1,0 +1,23 @@
+<!-- //templates/edit.html -->
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card card-body">
+            <form action="/update_Modulo/{{employee_Modulo.ID_ASIGNATURA}}" method="POST">
+                <div class="form-group">
+                    <label for="">Modulo</label>
+                    <input type="text" name="Asignatura" value="{{employee_Modulo.Asignatura}}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Actualizar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<!-- //profile.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h1>Perfil</h1>
+<div class="table-responsive-sm">
+    <p>Detalles de la cuenta:</p>
+    <table class="table table-bordered table-striped ">
+        <tr>
+            <td>Nombres:</td>
+            <td>{{ account['Nombres'] }}</td>
+        </tr>
+        <tr>
+            <td>Apellidos:</td>
+            <td>{{ account['Apellidos'] }}</td>
+        </tr>
+        <tr>
+            <td>Correo:</td>
+            <td>{{ account['Correo'] }}</td>
+        </tr>
+        <tr>
+            <td>Usuario:</td>
+            <td>{{ account['Usuario'] }}</td>
+        </tr>
+        <tr>
+            <td>Contraseña:</td>
+            <td>{{ account['Contraseña'] }}</td>
+        </tr>
+        <tr>
+            <td>Perfil:</td>
+            <td>{{ account['Rol'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
